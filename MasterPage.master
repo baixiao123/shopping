@@ -1,0 +1,215 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register assembly="WebValidates" namespace="WebValidates" tagprefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width:1000px;
+            height: 421px;
+        }
+        .style2
+        {    background-repeat:no-repeat;
+            height: 274px;
+        }
+        .style4
+        {
+            width: 238px;
+            height: 350px;
+        }
+        .style5
+        {    vertical-align:top;
+            height: 350px;
+        }
+        .style6
+        {
+            width: 100%;
+        }
+        .style7
+        {
+            width: 96px;
+        }
+        .style8
+        {
+        }
+        .style9
+        {
+            width: 88px;
+        }
+        .style10
+        {
+            height: 27px;
+            }
+        .style15
+        {
+            height: 33px;
+        }
+        .style16
+        {
+            height: 31px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style=" text-align:center;">
+        <table cellpadding="0" cellspacing="0" class="style1">
+            <tr style="text-align:center">
+                <td class="style10" 
+                    
+                    style="background-image: url('/Image/bj.jpg'); background-repeat: repeat-x" 
+                    colspan="2">
+                    <table cellpadding="0" cellspacing="0" class="style6">
+                        <tr>
+                            <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server">首页</asp:HyperLink>
+                            </td>
+                            <td>
+                    <asp:HyperLink ID="HyperLink2" runat="server">精品推荐</asp:HyperLink>
+                            </td>
+                            <td>
+                    <asp:HyperLink ID="HyperLink3" runat="server">精品购物</asp:HyperLink>
+                            </td>
+                            <td>
+                    <asp:HyperLink ID="HyperLink4" runat="server">特价展览</asp:HyperLink>
+                            </td>
+                            <td>
+                    <asp:HyperLink ID="HyperLink5" runat="server">留言板</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" colspan="2" 
+                    
+                    
+                    style="background-image: url('Image/top.jpg'); background-repeat: repeat-x;">
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                          <%if (Session["people"] != null)
+                            { %>
+                    <table cellpadding="0" cellspacing="0" class="style6">
+                        <tr>
+                            <td colspan="2" class="style15" 
+                                style="background-image: url('Image/login.jpg'); background-repeat: no-repeat">
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="style7">
+                                欢迎用户</td>
+                            <td>
+                            <%=Session["people"].ToString() %>
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="style7">
+                                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Mycategory.aspx">看购物车</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/myorder.aspx">查看订单</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style7">
+                                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/myinfor.aspx">修改资料</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/changepasswd.aspx">修改密码</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style7">
+                                <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/outlogin.aspx">退出登陆</asp:HyperLink>
+                            </td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                    <% }
+                            else
+                            { %>;
+                    <br />
+                    <table cellpadding="0" cellspacing="0" class="style6">
+                        <tr>
+                            <td colspan="2" class="style16" 
+                                style="background-image: url('Image/login.jpg'); background-repeat: no-repeat">
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                用户</td>
+                            <td>
+                                <asp:TextBox ID="username" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                密码</td>
+                            <td>
+                                <asp:TextBox ID="pwd" runat="server" TextMode="Password"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                验证</td>
+                            <td>
+                                <asp:TextBox ID="checkcode" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style8" colspan="2">
+                                <cc1:SerialNumber ID="sncode" runat="server">
+                                </cc1:SerialNumber>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                <asp:Button ID="Button1" runat="server" Text="登陆" onclick="Button1_Click" />
+                            </td>
+                            <td>
+                                <asp:Button ID="Button2" runat="server" Text=" 注册" onclick="Button2_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                    <%} %>
+                    <br />
+                    <asp:DataList ID="DataList1" runat="server" DataKeyField="id" 
+                        DataSourceID="SqlDataSource1" RepeatColumns="2" CellPadding="5">
+                        <ItemTemplate>
+                            <asp:HyperLink ID="HyperLink7" runat="server" 
+                                NavigateUrl='<%# Eval("BigClass","Default2.aspx?BigClass={0}") %>' 
+                                Text='<%# Eval("BigClass") %>'></asp:HyperLink>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </ItemTemplate>
+                    </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:siteconn %>" 
+                        SelectCommand="SELECT * FROM [BigClass]"></asp:SqlDataSource>
+                </td>
+                <td class="style5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

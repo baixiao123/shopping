@@ -1,0 +1,100 @@
+TD {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 18px; FONT-FAMILY: "宋体"; LETTER-SPACING: 1px
+}
+BODY {
+	MARGIN: 0px
+}
+.p12-5 {
+	CURSOR: hand; LINE-HEIGHT: 25px; FONT-FAMILY: "宋体"; LETTER-SPACING: 5px
+}
+.etd {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 18px; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.p12-h18 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 25px
+}
+A:visited {
+	COLOR: #22375b; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A:link {
+	COLOR: #22375b; TEXT-DECORATION: none
+}
+.ibbtn {
+	BORDER-RIGHT: #688db0 1px solid; BORDER-TOP: #688db0 1px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(/info/images/title.gif); BORDER-LEFT: #688db0 1px solid; COLOR: #003366; LINE-HEIGHT: 20px; BORDER-BOTTOM: #688db0 1px solid; FONT-FAMILY: "宋体"; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff
+}
+.form {
+	BORDER-RIGHT: #246fc2 1px solid; BORDER-TOP: #246fc2 1px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../img/inputbg.gif); BORDER-LEFT: #246fc2 1px solid; LINE-HEIGHT: 17px; BORDER-BOTTOM: #246fc2 1px solid; FONT-FAMILY: "宋体"; HEIGHT: 22px
+}
+.login {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../img/button.gif); BORDER-LEFT: 0px; WIDTH: 92px; COLOR: #ffffff; BORDER-BOTTOM: 0px; HEIGHT: 33px
+}
+.td-color {
+	BACKGROUND-POSITION: 50% top; FONT-FAMILY: "宋体"; BACKGROUND-COLOR: #e0f1fe
+}
+.title-td {
+	BACKGROUND-POSITION: center center; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(/dkcom/background.gif); COLOR: #003366; LETTER-SPACING: 2px
+}
+.p14-24 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 24px; FONT-FAMILY: "宋体"
+}
+.p12-22 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 22px; FONT-FAMILY: "宋体"
+}
+.p12-18 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 18px; FONT-FAMILY: "宋体"
+}
+.p12-w2 {
+	LETTER-SPACING: 2px
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+.time {
+	FONT-SIZE: 10px; COLOR: #aaaaaa; FONT-FAMILY: "Arial"
+}
+.hand {
+	CURSOR: hand
+}
+.p12-w1 {
+	FONT-SIZE: 12px; FONT-FAMILY: "宋体"; LETTER-SPACING: 1px
+}
+.waite {
+	COLOR: #ffffff
+}
+.guest-head {
+	BACKGROUND-IMAGE: url(/dkcom/background.gif); HEIGHT: 27px
+}
+.title {
+	FONT-SIZE: 14px; FONT-FAMILY: "宋体"
+}
+.shad {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; FILTER: DropShadow(Color=#7DC9F5, OffX=1, OffY=1, Positive=5); FONT-FAMILY: Arial, "宋体"; LETTER-SPACING: 3px
+}
+.form2 {
+	border: 1px solid #808080;
+	FONT-SIZE: 12px; 	LINE-HEIGHT: 17px; 	FONT-FAMILY: "宋体";
+	width: 128px;
+}
+.p16 {
+	FONT-SIZE: 16px; LINE-HEIGHT: 24px; FONT-FAMILY: "宋体"; LETTER-SPACING: 2px
+}
+.p14 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 24px; FONT-FAMILY: "宋体"; LETTER-SPACING: 2px
+}
+.p12 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 22px; FONT-FAMILY: "宋体"; LETTER-SPACING: 1px
+}
+.ibtn1 {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; FONT-SIZE: 12px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.ibtn2 {
+	FONT-SIZE: 12px
+}
+.submit {
+	border: 1px solid #808080;
+	FONT-SIZE: 12px; 	COLOR: gray; 	LINE-HEIGHT: 17px; 	FONT-FAMILY: "宋体"; 	BACKGROUND-COLOR: #f0f0f0; 	TEXT-DECORATION: underline;
+	height: 18px;
+}

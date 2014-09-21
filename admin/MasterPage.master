@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="admin_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>无标题页</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            height: 34px;
+        }
+        .style3
+        {
+            width: 121px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td class="style2" colspan="2" 
+                    style="background-image: url('../images/images/menu1.gif'); background-repeat: repeat-x">
+                </td>
+            </tr>
+            <tr>
+                <td class="style3">
+                    <asp:TreeView ID="TreeView1" runat="server">
+                        <Nodes>
+                            <asp:TreeNode Text="管理员" Value="管理员">
+                                <asp:TreeNode Text="添加管理员" Value="添加管理员"></asp:TreeNode>
+                                <asp:TreeNode Text="管理管理员" Value="管理管理员"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="会员管理" Value="会员管理"></asp:TreeNode>
+                            <asp:TreeNode Text="管理会员" Value="管理会员"></asp:TreeNode>
+                            <asp:TreeNode Text="产品类别" Value="产品类别">
+                                <asp:TreeNode Text="添加类别" Value="添加类别"></asp:TreeNode>
+                                <asp:TreeNode Text="管理类别" Value="管理类别"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="添加产品" Value="添加产品"></asp:TreeNode>
+                            <asp:TreeNode Text="产品管理" Value="产品管理"></asp:TreeNode>
+                            <asp:TreeNode Text="察看订单" Value="察看订单"></asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

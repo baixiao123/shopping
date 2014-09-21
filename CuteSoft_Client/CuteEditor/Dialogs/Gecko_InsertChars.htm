@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>[[InsertChars]] </title>		
+		<meta name="content-type" content="text/html ;charset=Unicode" />
+		<meta http-equiv="Page-Enter" content="blendTrans(Duration=0.1)" />
+		<meta http-equiv="Page-Exit" content="blendTrans(Duration=0.1)" />
+		<link href='Load.ashx?type=themecss&file=dialog.css&theme=[[_Theme_]]' type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="Load.ashx?type=dialogscript&file=DialogHead.js"></script>
+		<script type="text/javascript" src="Load.ashx?type=dialogscript&file=DialogHead.js"></script>
+		<script type="text/javascript">
+		
+			var OxO59b0=["","\x3Ctr\x3E","\x3Ctd style=\x27height: 20; font-size: 12px; \x27 bgcolor=white width=\x2718\x27 onClick=\x27getchar(this)\x27 onmouseover=\x27spcOver(this)\x27 onmouseout=\x27spcOut(this)\x27 title=\x27","\x27 \x3E","\x26#",";","\x3C/td\x3E","\x3C/tr\x3E","background","style","#0A246A","color","white","black","Verdana","innerHTML","Unicode","\x3CFONT CLASS=\x27UNICODE\x27\x3E","\x3Cspan style=\x27font-family:","\x27\x3E","\x3C/span\x3E"];var editor=Window_GetDialogArguments(window); function Close(){ Window_CloseDialog(window) ;}  ;var tds=0x16; function writeChars(){var Ox24=OxO59b0[0x0];for(var i=0x21;i<0x100;){ document.write(OxO59b0[0x1]) ;for(var j=0x0;j<=tds;j++){ document.write(OxO59b0[0x2]+i+OxO59b0[0x3]) ; document.write(OxO59b0[0x4]+i+OxO59b0[0x5]) ; document.write(OxO59b0[0x6]) ; i++ ;} ; document.write(OxO59b0[0x7]) ;} ;}  ; function spcOver(Ox27){ Ox27[OxO59b0[0x9]][OxO59b0[0x8]]=OxO59b0[0xa] ; Ox27[OxO59b0[0x9]][OxO59b0[0xb]]=OxO59b0[0xc] ;}  ; function spcOut(Ox27){ Ox27[OxO59b0[0x9]][OxO59b0[0x8]]=OxO59b0[0xc] ; Ox27[OxO59b0[0x9]][OxO59b0[0xb]]=OxO59b0[0xd] ;}  ; function getchar(obj){var Ox2b;var Ox2c=getFontValue()||OxO59b0[0xe];if(!obj[OxO59b0[0xf]]){return ;} ; Ox2b=obj[OxO59b0[0xf]] ;if(Ox2c==OxO59b0[0x10]){ Ox2b=OxO59b0[0x11]+obj[OxO59b0[0xf]]+OxO59b0[0x0] ;} else {if(Ox2c!=OxO59b0[0xe]){ Ox2b=OxO59b0[0x12]+Ox2c+OxO59b0[0x13]+obj[OxO59b0[0xf]]+OxO59b0[0x14] ;} ;} ; editor.PasteHTML(Ox2b) ; Window_CloseDialog(window) ;}  ;
+		</script>
+	</head>
+	<body>
+			<table border="0" cellspacing="2" cellpadding="2" width="99%" id="Table1">
+				<tr style="display:none">
+					<td class="normal">
+						[[FontName]]: 
+						<input type="radio" onpropertychange="sel_font_change()" id="selfont1" name="selfont" value="" checked="checked" />
+						<label for="selfont1">[[Default]]</label> 
+						<input type="radio" onpropertychange="sel_font_change()" id="selfont2" name="selfont" value="webdings" />
+						<label for="selfont2">Webdings</label>
+						<input type="radio" onpropertychange="sel_font_change()" id="selfont3" name="selfont" value="wingdings" />
+						<label for="selfont3">Wingdings</label>
+						<input type="radio" onpropertychange="sel_font_change()" id="selfont4" name="selfont" value="symbol" />
+						<label for="selfont4">Symbol</label>
+						<input type="radio" onpropertychange="sel_font_change()" id="selfont5" name="selfont" value="Unicode" />
+						<label for="selfont5">Unicode</label>
+						<script type="text/javascript">
+						var OxO45e5=["selfont","length","checked","value","Verdana","display","style","charstable1","Unicode","block","none","charstable2","fontFamily"]; function getFontValue(){var Ox2f=document.getElementsByName(OxO45e5[0x0]);for(var i=0x0;i<Ox2f[OxO45e5[0x1]];i++){if(Ox2f[i][OxO45e5[0x2]]){return Ox2f[i][OxO45e5[0x3]];} ;} ;}  ; function sel_font_change(){var Ox31=getFontValue()||OxO45e5[0x4]; document.getElementById(OxO45e5[0x7])[OxO45e5[0x6]][OxO45e5[0x5]]=(Ox31!=OxO45e5[0x8]?OxO45e5[0x9]:OxO45e5[0xa]) ; document.getElementById(OxO45e5[0xb])[OxO45e5[0x6]][OxO45e5[0x5]]=(Ox31==OxO45e5[0x8]?OxO45e5[0x9]:OxO45e5[0xa]) ; document.getElementById(OxO45e5[0x7])[OxO45e5[0x6]][OxO45e5[0xc]]=Ox31 ;if(Ox31==OxO45e5[0x8]){} ;}  ;
+						</script>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<fieldset>
+							<legend>
+								[[InsertChars]]
+							</legend>
+							<br />
+							<table id="charstable1" width="95%" cellspacing="1" cellpadding="1" border="0"
+								 style="FONT-FAMILY: Verdana; background-color:#696969; border-color:#696969; height:222">
+								<script type="text/javascript">
+								var OxOd0a5=[]; writeChars() ;
+								</script>
+							</table>
+							<table id="charstable2" width="95%" cellspacing="1" cellpadding="1" border="0"
+								style="FONT-FAMILY: Verdana; background-color:#696969; border-color:#696969;display:none; height:222">
+								<script type="text/javascript">
+								var OxO6166=["\x26#402;","\x26#913;","\x26#914;","\x26#915;","\x26#916;","\x26#917;","\x26#918;","\x26#919;","\x26#920;","\x26#921;","\x26#922;","\x26#923;","\x26#924;","\x26#925;","\x26#926;","\x26#927;","\x26#928;","\x26#929;","\x26#931;","\x26#932;","\x26#933;","\x26#934;","\x26#935;","\x26#936;","\x26#937;","\x26#945;","\x26#946;","\x26#947;","\x26#948;","\x26#949;","\x26#950;","\x26#951;","\x26#952;","\x26#953;","\x26#954;","\x26#955;","\x26#956;","\x26#957;","\x26#958;","\x26#959;","\x26#960;","\x26#961;","\x26#962;","\x26#963;","\x26#964;","\x26#965;","\x26#966;","\x26#967;","\x26#968;","\x26#969;","\x26#977;","\x26#978;","\x26#982;","\x26#8226;","\x26#8230;","\x26#8242;","\x26#8243;","\x26#8254;","\x26#8260;","\x26#8472;","\x26#8465;","\x26#8476;","\x26#8482;","\x26#8501;","\x26#8592;","\x26#8593;","\x26#8594;","\x26#8595;","\x26#8596;","\x26#8629;","\x26#8656;","\x26#8657;","\x26#8658;","\x26#8659;","\x26#8660;","\x26#8704;","\x26#8706;","\x26#8707;","\x26#8709;","\x26#8711;","\x26#8712;","\x26#8713;","\x26#8715;","\x26#8719;","\x26#8722;","\x26#8727;","\x26#8730;","\x26#8733;","\x26#8734;","\x26#8736;","\x26#8869;","\x26#8870;","\x26#8745;","\x26#8746;","\x26#8747;","\x26#8756;","\x26#8764;","\x26#8773;","\x26#8800;","\x26#8801;","\x26#8804;","\x26#8805;","\x26#8834;","\x26#8835;","\x26#8836;","\x26#8838;","\x26#8839;","\x26#8853;","\x26#8855;","\x26#8901;","\x26#8968;","\x26#8969;","\x26#8970;","\x26#8971;","\x26#9001;","\x26#9002;","\x26#9674;","\x26#9824;","\x26#9827;","\x26#9829;","\x26#9830;","length","\x3Ctr\x3E","\x26","\x26amp;","\x3Ctd style=\x27height: 20; font-size: 12px; \x27 bgcolor=white width=\x2718\x27 onClick=\x27getchar(this)\x27 onmouseover=\x27spcOver(this)\x27 onmouseout=\x27spcOut(this)\x27 title=\x27"," - ","\x27 \x3E","\x3C/td\x3E","\x3C/tr\x3E"];var arr=[OxO6166[0x0],OxO6166[0x1],OxO6166[0x2],OxO6166[0x3],OxO6166[0x4],OxO6166[0x5],OxO6166[0x6],OxO6166[0x7],OxO6166[0x8],OxO6166[0x9],OxO6166[0xa],OxO6166[0xb],OxO6166[0xc],OxO6166[0xd],OxO6166[0xe],OxO6166[0xf],OxO6166[0x10],OxO6166[0x11],OxO6166[0x12],OxO6166[0x13],OxO6166[0x14],OxO6166[0x15],OxO6166[0x16],OxO6166[0x17],OxO6166[0x18],OxO6166[0x19],OxO6166[0x1a],OxO6166[0x1b],OxO6166[0x1c],OxO6166[0x1d],OxO6166[0x1e],OxO6166[0x1f],OxO6166[0x20],OxO6166[0x21],OxO6166[0x22],OxO6166[0x23],OxO6166[0x24],OxO6166[0x25],OxO6166[0x26],OxO6166[0x27],OxO6166[0x28],OxO6166[0x29],OxO6166[0x2a],OxO6166[0x2b],OxO6166[0x2c],OxO6166[0x2d],OxO6166[0x2e],OxO6166[0x2f],OxO6166[0x30],OxO6166[0x31],OxO6166[0x32],OxO6166[0x33],OxO6166[0x34],OxO6166[0x35],OxO6166[0x36],OxO6166[0x37],OxO6166[0x38],OxO6166[0x39],OxO6166[0x3a],OxO6166[0x3b],OxO6166[0x3c],OxO6166[0x3d],OxO6166[0x3e],OxO6166[0x3f],OxO6166[0x40],OxO6166[0x41],OxO6166[0x42],OxO6166[0x43],OxO6166[0x44],OxO6166[0x45],OxO6166[0x46],OxO6166[0x47],OxO6166[0x48],OxO6166[0x49],OxO6166[0x4a],OxO6166[0x4b],OxO6166[0x4c],OxO6166[0x4d],OxO6166[0x4e],OxO6166[0x4f],OxO6166[0x50],OxO6166[0x51],OxO6166[0x52],OxO6166[0x53],OxO6166[0x54],OxO6166[0x54],OxO6166[0x55],OxO6166[0x56],OxO6166[0x57],OxO6166[0x58],OxO6166[0x59],OxO6166[0x5a],OxO6166[0x5b],OxO6166[0x5c],OxO6166[0x5d],OxO6166[0x5e],OxO6166[0x5f],OxO6166[0x60],OxO6166[0x61],OxO6166[0x61],OxO6166[0x62],OxO6166[0x63],OxO6166[0x64],OxO6166[0x65],OxO6166[0x66],OxO6166[0x67],OxO6166[0x68],OxO6166[0x69],OxO6166[0x6a],OxO6166[0x6b],OxO6166[0x6c],OxO6166[0x5a],OxO6166[0x6d],OxO6166[0x6e],OxO6166[0x6f],OxO6166[0x70],OxO6166[0x71],OxO6166[0x72],OxO6166[0x73],OxO6166[0x74],OxO6166[0x75],OxO6166[0x76],OxO6166[0x77],OxO6166[0x78]];for(var i=0x0;i<arr[OxO6166[0x79]];i+=tds){ document.write(OxO6166[0x7a]) ;for(var j=i;j<i+tds&&j<arr[OxO6166[0x79]];j++){var n=arr[j]; document.write(OxO6166[0x7d]+n+OxO6166[0x7e]+n.replace(OxO6166[0x7b],OxO6166[0x7c])+OxO6166[0x7f]) ; document.write(n) ; document.write(OxO6166[0x80]) ;} ; document.write(OxO6166[0x81]) ;} ;
+								</script>
+							</table>
+							<br />	
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<input type="button" value="[[Cancel]]" class="formbutton" onclick="Close()" ID="Button1" NAME="Button1"/>
+					</td>
+				</tr>
+			</table>
+	</body>
+</html>
